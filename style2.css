@@ -1,0 +1,66 @@
+body {
+    padding: 10px;
+    margin: 0;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 18px;
+    line-height: 150%;
+    color: #333;
+    background: #efeee7;
+}
+
+h1 {
+    padding: 20px;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: rgb(21, 83, 119);
+  }
+
+
+  
+/* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+    width: 50%;
+    word-wrap: normal;
+    padding: 10px
+}
+
+.column.side img {
+    float: left;
+    padding: 10px
+}
+
+/* Middle column */
+.column.middle {
+    width: 50%;
+}
+
+.column.middle img {
+    padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+
+  /* Selecting elements by class */
+.container {
+    width: 1024px;
+    margin: 0 auto;
+  }

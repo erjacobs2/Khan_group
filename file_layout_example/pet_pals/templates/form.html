@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pet Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="jumbotron" style="text-align: center">
+        <h1>Pet Pal</h1>
+        <a href="/" class="btn btn-primary" role="button">View Chart</a>
+      </div>
+      <div class="row">
+        <div class="col-md-offset-2 col-md-8">
+          <h2>Enter your pet's details below!</h2>
+          <form method="POST" action="/send" role="form", name="petform">
+              <div class="form-group">
+                  <label for="inputName">Pet Name</label>
+                  <input type="text" class="form-control" id="inputName" name="petName" placeholder="Name">
+              </div>
+              <div class="form-group">
+                  <label for="inputLat">Pet Location Lat</label>
+                  <input type="text" class="form-control" id="inputLat" name="petLat" placeholder="Lat">
+              </div>
+              <div class="form-group">
+                  <label for="inputLon">Pet Location Lon</label>
+                  <input type="text" class="form-control" id="inputLon" name="petLon" placeholder="Lon">
+              </div>
+              <input type="submit" value="submit" class="btn btn-primary">
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
